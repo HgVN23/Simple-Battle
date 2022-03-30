@@ -64,20 +64,6 @@ td:hover {
 	font-size: 30px;
 }
 /*==================================================*/
-/*Text color/decoration*/
-.textLink:link, .textLink:visited {
-	color: #3b82f6;
-	text-decoration: none;
-}
-.textLink:hover {
-	color: #1d4ed8;
-	text-decoration: underline;
-}
-.textLink:active {
-	color: yellow;
-	text-decoration: underline;
-}
-/*==================================================*/
 .flex {
 	display: flex;
 }
@@ -129,11 +115,10 @@ td:hover {
 	flex-direction: column;
 }
 .card {
-	background-color: #22b14c;
 	border: 3px solid black;
 	cursor: pointer;
 	display: flex;
-	height: 290px;
+	height: 280px;
 	width: 200px;
 }
 .card:hover {
@@ -142,8 +127,6 @@ td:hover {
 .front {
 	margin-top: -200px;
 }
-/*==================================================*/
-/*Symbol*/
 .sword {
 	content: url(../image/sword.png);
 	height: 60px;
