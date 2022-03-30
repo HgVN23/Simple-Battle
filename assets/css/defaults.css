@@ -8,35 +8,16 @@
 	font-family: simpleBattleText;
 	src: url(../font/MAGIMTOS.ttf);
 }
-* {
-	color: white;
-	font-family: sans-serif;
-	margin: 0;
-	user-select: none;
+
+:root {
+	--bg-color: #262626;
+
+	scrollbar-color: #171717 var(--bg-color);
 }
-body {
-	background-color: #262626;
-}
-table {
-	border-spacing: 3px;
-	font-size: 50px;
-	text-align: center;
-	width: 100%;
-}
-td {
-	border: 3px solid black;
-	color: black;
-	cursor: pointer;
-	font-family: simpleBattleText;
-	height: 170px;
-	width: 300px;
-}
-td:hover {
-	border: 3px solid white;
-}
+
 /*Custom Scrollbar*/
 ::-webkit-scrollbar {
-	background-color: #262626;
+	background-color: var(--bg-color);
 	width: 10px;
 }
 ::-webkit-scrollbar-thumb {
@@ -46,12 +27,43 @@ td:hover {
 ::-webkit-scrollbar-thumb:hover {
 	border: 2px solid #1d4ed8;
 }
+
+
+body {
+	margin: 0;
+	background-color: var(--bg-color);
+	color: white;
+	font-family: sans-serif;
+	user-select: none;
+}
+
+table {
+	border-spacing: 3px;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+td {
+	border: 3px solid black;
+	color: black;
+	cursor: pointer;
+	font-family: simpleBattleText, fantasy;
+	height: 170px;
+	width: 300px;
+}
+
+td:hover {
+	border: 3px solid white;
+}
+
 /*==================================================*/
 /*Thuộc Header*/
 .header {
 	justify-content: center;
 	display: flex;
 }
+
 .logo {
 	content: url(../image/logo.png);
 	height: 45px;
@@ -60,7 +72,7 @@ td:hover {
 }
 .headerTitle {
 	margin-top: 10px;
-	font-family: simpleBattleHeader;
+	font-family: simpleBattleHeader, fantasy;
 	font-size: 30px;
 }
 /*==================================================*/
@@ -80,9 +92,6 @@ td:hover {
 /*==================================================*/
 .flex {
 	display: flex;
-}
-.board {
-	/*margin: 0 5em 0 0;*/
 }
 .lvl1 {
 	background-color: #22b14c;
@@ -139,27 +148,25 @@ td:hover {
 .card:hover {
 	border: 3px solid white;
 }
+
 .front {
 	margin-top: -200px;
 }
 /*==================================================*/
 /*Symbol*/
-.sword {
-	content: url(../image/sword.png);
+.symbol {
 	height: 60px;
 	margin: 10px auto 0 auto;
 	width: 60px;
+}
+
+.sword {
+	content: url(../image/sword.png);
 }
 .shield {
 	content: url(../image/shield.png);
-	height: 60px;
-	margin: 10px auto 0 auto;
-	width: 60px;
 }
 .speed {
 	content: url(../image/speed.png);
-	height: 60px;
-	margin: 10px auto 0 auto;
-	width: 60px;
 }
 /*==================================================*/
