@@ -127,7 +127,7 @@ td:hover {
 	border: 3px solid black;
 	cursor: pointer;
 	display: flex;
-	height: 290px;
+	height: 280px;
 	width: 200px;
 }
 .card:hover {
