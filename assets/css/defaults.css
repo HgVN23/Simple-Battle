@@ -1,5 +1,4 @@
 /*==================================================*/
-/*Mặc định*/
 @font-face {
 	font-family: simpleBattleHeader;
 	src: url(../font/Viner_Hand_ITC.ttf);
@@ -8,14 +7,10 @@
 	font-family: simpleBattleText;
 	src: url(../font/MAGIMTOS.ttf);
 }
-
 :root {
 	--bg-color: #262626;
-
 	scrollbar-color: #171717 var(--bg-color);
 }
-
-/*Custom Scrollbar*/
 ::-webkit-scrollbar {
 	background-color: var(--bg-color);
 	width: 10px;
@@ -27,8 +22,6 @@
 ::-webkit-scrollbar-thumb:hover {
 	border: 2px solid #1d4ed8;
 }
-
-
 body {
 	margin: 0;
 	background-color: var(--bg-color);
@@ -36,14 +29,13 @@ body {
 	font-family: sans-serif;
 	user-select: none;
 }
-
 table {
 	border-spacing: 3px;
 	font-size: 50px;
+	margin-left: 1%;
 	text-align: center;
 	width: 100%;
 }
-
 td {
 	border: 3px solid black;
 	color: black;
@@ -52,18 +44,14 @@ td {
 	height: 170px;
 	width: 300px;
 }
-
 td:hover {
 	border: 3px solid white;
 }
-
 /*==================================================*/
-/*Thuộc Header*/
 .header {
-	justify-content: center;
 	display: flex;
+	justify-content: center;
 }
-
 .logo {
 	content: url(../image/logo.png);
 	height: 45px;
@@ -78,6 +66,44 @@ td:hover {
 /*==================================================*/
 .flex {
 	display: flex;
+	flex-wrap: wrap;
+}
+.hand {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 0 auto;
+}
+.margin {
+	margin: 0 1% 0 auto;
+}
+.marginSymbol {
+	margin-top: 13px!important;
+}
+.center {
+	margin: auto;
+}
+.stack {
+	margin-top: -220px;
+}
+.icon {
+	height: 80px;
+	width: 80px;
+}
+.symbol {
+	height: 60px;
+	margin: 2px auto 0 auto;
+	width: 60px;
+}
+.card {
+	border: 3px solid black;
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	height: 280px;
+	width: 200px;
+}
+.card:hover {
+	border: 3px solid white;
 }
 .lvl1 {
 	background-color: #22b14c;
@@ -102,46 +128,12 @@ td:hover {
 }
 .discardIcon {
 	content: url(../image/discardIcon.png);
-	height: 80px;
-	margin: auto;
-	width: 80px;
 }
 .giftIcon {
 	content: url(../image/giftIcon.png);
-	height: 80px;
-	margin: auto;
-	width: 80px;
 }
 .drawIcon {
 	content: url(../image/drawIcon.png);
-	height: 100px;
-	margin: auto;
-	width: 100px;
-}
-.hand {
-	margin-left: 20px;
-	display: flex;
-	flex-direction: column;
-}
-.card {
-	border: 3px solid black;
-	cursor: pointer;
-	display: flex;
-	height: 280px;
-	width: 200px;
-}
-.card:hover {
-	border: 3px solid white;
-}
-
-.front {
-	margin-top: -200px;
-}
-
-.symbol {
-	height: 60px;
-	margin: 10px auto 0 auto;
-	width: 60px;
 }
 .sword {
 	content: url(../image/sword.png);
