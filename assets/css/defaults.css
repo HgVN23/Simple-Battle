@@ -104,6 +104,13 @@ td:hover {
 }
 .card:hover {
 	border: 3px solid white;
+	z-index: 1;
+}
+.giftCard {
+	flex-direction: column;
+}
+.giftCard .symbol {
+	margin: 0 0 auto auto;
 }
 .lvl1 {
 	background-color: #22b14c;
@@ -143,5 +150,11 @@ td:hover {
 }
 .speed {
 	content: url(../image/speed.png);
+}
+.anything {
+	content: url(../image/anything.png);
+}
+.double {
+	content: url(../image/double.png);
 }
 /*==================================================*/
